@@ -17,6 +17,7 @@ public class Program {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
+		// Para receber data nesse formato
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
 		
@@ -76,7 +77,7 @@ public class Program {
 		
 		System.out.println("Name : " + worker.getName() );
 		System.out.println("Department : " +  worker.getDepartment().getName());
-		System.out.println("Ganhos do periodo : " + monthYear + " total : " String.format("%.2f", worker.income(year, month)));
+		System.out.println("Ganhos do periodo : " + monthYear + " total : " + String.format("%.2f", worker.income(year, month)));
 				
 		
 		 sc.close();
